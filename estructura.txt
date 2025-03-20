@@ -1,0 +1,32 @@
+// esta es la estructura base de la V 1.0
+(si esta estructura se cambia, actualizar con el numero de la versión)
+
+twf-libro-reclamaciones/
+│
+├── twf-libro-reclamaciones.php       # Archivo principal del plugin
+├── uninstall.php                     # Script de desinstalación
+├── estructura.txt                        # Documentación del plugin
+│
+├── admin/                            # Archivos para el área de administración
+│   ├── class-twf-libro-admin.php     # Clase principal de administración
+│   ├── assets/                       # material de apoyo
+│   ├── css/                          # Estilos para el admin
+│   ├── js/                           # JavaScript para el admin
+│   ├── partials/                     # Plantillas HTML para las vistas de admin
+│   │   ├── settings-display.php      # Vista de ajustes
+│   │   ├── registros-display.php     # Vista de lista de registros
+│   │   ├── preview-display.php       # Vista previa del formulario
+│   │   └── ayuda-display.php         # Vista de ayuda
+│
+├── includes/                         # Funcionalidad central compartida
+│   ├── class-twf-libro.php           # Clase principal del plugin
+│   ├── class-twf-libro-activator.php # Activación del plugin (creación de tablas)
+│   ├── class-twf-libro-deactivator.php # Desactivación del plugin
+│   └── class-twf-libro-database.php  # Manejo de la base de datos
+│
+└── public/                           # Archivos para el frontend
+    ├── class-twf-libro-public.php    # Clase principal del frontend
+    ├── css/                          # Estilos para el frontend
+    ├── js/                           # JavaScript para el frontend
+    └── partials/                     # Plantillas HTML para el frontend
+        └── formulario-display.php    # Plantilla del formulario público
